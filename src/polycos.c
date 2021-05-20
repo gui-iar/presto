@@ -152,6 +152,18 @@ char *make_polycos(char *parfilenm, infodata * idata, char *polycofilenm, int de
     } else if (strcmp(idata->telescope, "KAT-7") == 0) {
         scopechar = 'k';
         tracklen = 12;
+   } else if (strcmp(idata->telescope, "IAR1") == 0) {
+      scopechar = 'm';
+      tracklen = 12;
+   } else if (strcmp(idata->telescope, "IAR2") == 0) {
+      scopechar = 'n';
+      tracklen = 12;
+   } else if (strcmp(idata->telescope, "DSA3") == 0) {
+      scopechar = 'p';
+      tracklen = 12;
+   } else if (strcmp(idata->telescope, "CLTC") == 0) {
+      scopechar = 'q';
+      tracklen = 12;     
     } else if (strcmp(idata->telescope, "Geocenter") == 0) {
         scopechar = 'o';
         tracklen = 12;
