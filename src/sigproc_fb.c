@@ -217,11 +217,11 @@ void get_backend_name(int machine_id, struct spectra_info *s)
     case 23:
         strcpy(s->backend, "RTL-Filterbank");
         break;            
-    case 64:
-        strcpy(string, "KAT");
+    case 24:
+        strcpy(string, "IAR-ROACH-v1");
         break;
-    case 65:
-        strcpy(string, "KAT-DC2");
+    case 25:
+        strcpy(string, "IAR-SNAP-v1");
         break;
     default:
         strcpy(s->backend, "Unknown");
