@@ -124,14 +124,8 @@ void get_telescope_name(int telescope_id, struct spectra_info *s)
         strcpy(s->telescope, "VLA");
         s->beam_FWHM = default_beam;
         break;
-    case 20:  // May need to change....
-        strcpy(s->telescope, "CHIME");
-        s->beam_FWHM = 2.0 / 3600.0 * beam_halfwidth(s->fctr, 20.0);
-        break;
-    case 21:  // May need to change....
-        strcpy(s->telescope, "FAST");
-        s->beam_FWHM = 2.0 / 3600.0 * beam_halfwidth(s->fctr, 350.0);
-        break;
+
+
     case 64:
         strcpy(s->telescope, "MeerKAT");
         s->beam_FWHM = default_beam;
@@ -140,6 +134,36 @@ void get_telescope_name(int telescope_id, struct spectra_info *s)
         strcpy(s->telescope, "KAT-7");
         s->beam_FWHM = default_beam;
         break;
+ 
+   case 19:
+        strcpy(s->telescope, "IAR1");
+        s->beam_FWHM = default_beam;
+        break;
+    case 20:
+        strcpy(s->telescope, "Dwingeloo");
+        s->beam_FWHM = default_beam;
+        break;
+    case 21:
+        strcpy(s->telescope, "DL0SHF");
+        s->beam_FWHM = default_beam;
+        break;
+    case 22:
+        strcpy(s->telescope, "Sao Giao");
+        s->beam_FWHM = default_beam;
+        break;
+    case 23:
+        strcpy(s->telescope, "IAR2");
+        s->beam_FWHM = default_beam;
+        break;
+    case 24:
+        strcpy(s->telescope, "DSA3");
+        s->beam_FWHM = default_beam;
+        break;
+    case 25:
+        strcpy(s->telescope, "CLTC");
+        s->beam_FWHM = default_beam;
+        break;           
+        
     default:
         strcpy(s->telescope, "Unknown");
         s->beam_FWHM = default_beam;
@@ -182,8 +206,17 @@ void get_backend_name(int machine_id, struct spectra_info *s)
         strcpy(string, "PDEV");
         break;
     case 20:
-        strcpy(string, "CHIME+PSR");
+        strcpy(s->backend, "RTL_SDR");
         break;
+    case 21:
+        strcpy(s->backend, "USRP");
+        break;
+    case 22:
+        strcpy(s->backend, "Hack-RF");
+        break;
+    case 23:
+        strcpy(s->backend, "RTL-Filterbank");
+        break;            
     case 64:
         strcpy(string, "KAT");
         break;
