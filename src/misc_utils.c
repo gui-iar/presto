@@ -278,6 +278,18 @@ void telescope_to_tempocode(char *inname, char *outname, char *obscode)
     } else if (strcmp(scope, "k7") == 0 ) {
         strcpy(obscode, "K7");
         strcpy(outname, "KAT-7");
+    } else if (strcmp(scope, "iar1") == 0 ) {
+      strcpy(obscode, "A1");
+      strcpy(outname, "IAR1");
+    } else if (strcmp(scope, "iar2") == 0 ) {
+      strcpy(obscode, "A2");
+      strcpy(outname, "IAR2");
+    } else if (strcmp(scope, "dsa3") == 0 ) {
+      strcpy(obscode, "D3");
+      strcpy(outname, "DSA3");
+    } else if (strcmp(scope, "cltc") == 0 ) {
+      strcpy(obscode, "CL");
+      strcpy(outname, "CLTC");
     } else if (strcmp(scope, "geocenter") == 0) {
         strcpy(obscode, "0 ");
         strcpy(outname, "Geocenter");
