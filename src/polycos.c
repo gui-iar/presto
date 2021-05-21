@@ -153,7 +153,7 @@ char *make_polycos(char *parfilenm, infodata * idata, char *polycofilenm, int de
       scopechar = 'm';
       tracklen = 12;
    } else if (strcmp(idata->telescope, "IAR2") == 0) {
-      scopechar = 'n';
+      scopechar = 'o';
       tracklen = 12;
    } else if (strcmp(idata->telescope, "DSA3") == 0) {
       scopechar = 'p';
@@ -162,7 +162,7 @@ char *make_polycos(char *parfilenm, infodata * idata, char *polycofilenm, int de
       scopechar = 'q';
       tracklen = 12;     
     } else if (strcmp(idata->telescope, "Geocenter") == 0) {
-        scopechar = 'o';
+        scopechar = 'n';
         tracklen = 12;
     } else {                    /*  Barycenter */
         printf("Defaulting to barycenter for polyco generation...\n");
