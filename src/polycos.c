@@ -146,9 +146,12 @@ char *make_polycos(char *parfilenm, infodata * idata, char *polycofilenm, int de
     } else if (strcmp(idata->telescope, "SRT") == 0) {
         scopechar = 'z';
         tracklen = 12;
-    } else if (strcmp(idata->telescope, "KAT-7") == 0) {
-        scopechar = 'k';
-        tracklen = 12;
+   } else if (strcmp(idata->telescope, "Stockert 25m") == 0) {
+      scopechar = 'k';
+      tracklen = 12;
+   } else if (strcmp(idata->telescope, "Stockert 10m") == 0) {
+      scopechar = 'k';
+      tracklen = 12;
    } else if (strcmp(idata->telescope, "IAR1") == 0) {
       scopechar = 'm';
       tracklen = 12;
