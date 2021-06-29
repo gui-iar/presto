@@ -286,7 +286,7 @@ IAR_ROACH_v1: 24
 
 IAR_SNAP_v1: 25
 
-#Now build PRESTO
+#Now build PRESTO, addto path: $export PRESTO=/home/ggancio/presto
 
 cd $PRESTO/src
 
