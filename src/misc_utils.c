@@ -290,6 +290,12 @@ void telescope_to_tempocode(char *inname, char *outname, char *obscode)
     } else if (strcmp(scope, "cltc") == 0 ) {
       strcpy(obscode, "CL");
       strcpy(outname, "CLTC");
+    } else if (strcmp(scope, "stockert 25m") == 0 ) {
+      strcpy(obscode, "ST");
+      strcpy(outname, "Stockert 25m");
+    } else if (strcmp(scope, "stockert 10m") == 0 ) {
+      strcpy(obscode, "ST");
+      strcpy(outname, "Stockert 10m");
     } else if (strcmp(scope, "geocenter") == 0) {
         strcpy(obscode, "0 ");
         strcpy(outname, "Geocenter");
