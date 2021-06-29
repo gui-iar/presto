@@ -125,6 +125,18 @@ void get_telescope_name(int telescope_id, struct spectra_info *s)
         s->beam_FWHM = default_beam;
         break;
 
+    case 16:
+        strcpy(s->telescope, "Stockert 25m");
+        s->beam_FWHM = default_beam;
+        break;
+    case 17:
+        strcpy(s->telescope, "K5SO");
+        s->beam_FWHM = default_beam;
+        break;
+    case 18:
+        strcpy(s->telescope, "Stockert 10m");
+        s->beam_FWHM = default_beam;
+        break;
 
     case 64:
         strcpy(s->telescope, "MeerKAT");
