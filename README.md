@@ -287,14 +287,25 @@ IAR_ROACH_v1: 24
 IAR_SNAP_v1: 25
 
 #Now build PRESTO
+
 cd $PRESTO/src
+
 make makewisdom
+
 make prep
+
 make
+
 #For some reason it does not find slalib in the first run
+
 make
+
 make clean
+
 cd $PRESTO/python
+
 make
+
 make clean
+
 
