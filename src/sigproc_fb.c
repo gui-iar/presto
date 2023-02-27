@@ -152,11 +152,11 @@ void get_telescope_name(int telescope_id, struct spectra_info *s)
         s->beam_FWHM = default_beam;
         break;
     case 21:
-        strcpy(s->telescope, "DL0SHF");
+        strcpy(s->telescope, "IAR1R");
         s->beam_FWHM = default_beam;
         break;
     case 22:
-        strcpy(s->telescope, "Sao Giao");
+        strcpy(s->telescope, "IAR2R");
         s->beam_FWHM = default_beam;
         break;
     case 20:
