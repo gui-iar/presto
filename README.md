@@ -250,6 +250,9 @@ TEMPO:
 
 obsys.dat
 
+tempo2/T2runtime/observatory/Tempo2:
+
+observatories.dat
 
 PRESTO: 
 
