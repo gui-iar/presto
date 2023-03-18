@@ -1,4 +1,4 @@
-# PRESTO
+# PRESTO V2.2 for Python 2 ued at IAR-Dockers...
 
 http://www.cv.nrao.edu/~sransom/presto/
 
