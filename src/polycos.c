@@ -114,9 +114,6 @@ char *make_polycos(char *parfilenm, infodata * idata, char *polycofilenm)
     } else if (strcmp(idata->telescope, "Effelsberg") == 0) {
         scopechar = 'g';
         tracklen = 12;
-    } else if (strcmp(idata->telescope, "ATA") == 0) {
-        scopechar = 's';
-        tracklen = 12;
     } else if (strcmp(idata->telescope, "LOFAR") == 0) {
         scopechar = 't';
         tracklen = 12;
@@ -126,12 +123,18 @@ char *make_polycos(char *parfilenm, infodata * idata, char *polycofilenm)
     } else if (strcmp(idata->telescope, "FAST") == 0) {
         scopechar = 'k';
         tracklen = 5;
-    } else if (strcmp(idata->telescope, "GMRT") == 0) {
-        scopechar = 'r';
-        tracklen = 12;
-    } else if (strcmp(idata->telescope, "SHAO") == 0) {
-        scopechar = 's';
-        tracklen = 12;
+   } else if (strcmp(idata->telescope, "IAR1") == 0) {
+      scopechar = 'm';
+      tracklen = 12;
+   } else if (strcmp(idata->telescope, "IAR2") == 0) {
+      scopechar = 'o';
+      tracklen = 12;
+   } else if (strcmp(idata->telescope, "IAR1R") == 0) {
+      scopechar = 'r';
+      tracklen = 12;
+   } else if (strcmp(idata->telescope, "IAR2R") == 0) {
+      scopechar = 's';
+      tracklen = 12;
     } else if (strcmp(idata->telescope, "CHIME") == 0) {
         scopechar = 'y';
         tracklen = 1;
@@ -144,14 +147,8 @@ char *make_polycos(char *parfilenm, infodata * idata, char *polycofilenm)
     } else if (strcmp(idata->telescope, "SRT") == 0) {
         scopechar = 'z';
         tracklen = 12;
-    } else if (strcmp(idata->telescope, "MeerKAT") == 0) {
-        scopechar = 'm';
-        tracklen = 12;
     } else if (strcmp(idata->telescope, "KAT-7") == 0) {
         scopechar = 'k';
-        tracklen = 12;
-    } else if (strcmp(idata->telescope, "Geocenter") == 0) {
-        scopechar = 'o';
         tracklen = 12;
     } else {                    /*  Barycenter */
         printf("Defaulting to barycenter for polyco generation...\n");
