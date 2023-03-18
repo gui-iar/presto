@@ -170,3 +170,80 @@ Ray, Paul Scholz, Ingrid Stairs, Kevin Stovall, Joeri van Leeuwen for
 many comments, suggestions and patches!
 
 Scott Ransom <sransom@nrao.edu>
+
+
+
+-------------For IAR----------------
+
+Note, to use presto tools with our location and codes, we need to edit the following files from...
+
+TEMPO:
+
+obsys.dat
+
+tempo2/T2runtime/observatory/Tempo2:
+
+aliases  observatories.dat
+
+PRESTO: 
+
+telescope_to_tempocode() in misc_utils.c
+
+make_polycos() in polycos.c
+
+get_telescope_name() in sigproc_fb.c
+
+
+SIGPROC: 
+
+and aliases.c
+
+
+This data will be used by the .fil header file, from the .iar file
+
+Telescope ID,
+
+IAR-A1: 19, "IAR1", "A1", "m"
+
+IAR-A2: 20, "IAR2", "A2", "o",
+
+IAR-ROACH-A1: 21, "IAR1R", "R1", "r"
+
+IAR-ROACH-A2: 22, "IAR2R", "R2", "s",
+
+DSA-3: 24, "DSA3", "D3", "p",
+
+CLTC: 25, "CLTC", "CL", "q",
+
+
+Machine ID,
+
+RTL_Filterbank: 23
+
+IAR_ROACH_v1: 24
+
+IAR_SNAP_v1: 25
+
+#Now build PRESTO, addto path: $export PRESTO=/home/ggancio/presto
+
+cd $PRESTO/src
+
+make makewisdom
+
+make prep
+
+make
+
+#For some reason it does not find slalib in the first run
+
+make
+
+make clean
+
+cd $PRESTO/python
+
+make
+
+make clean
+
+
