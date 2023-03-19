@@ -245,7 +245,7 @@ Scott Ransom <sransom@nrao.edu>
 -------------For IAR----------------
 
 
-If we want presto inside our ipta docekr we need presto 2.2 (forpython 2)so...
+If we want presto inside our ipta docker we need presto 2.2 (forpython 2)so...
 
 
 git clone git://github.com/scottransom/presto.git
