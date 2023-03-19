@@ -243,6 +243,10 @@ Scott Ransom <sransom@nrao.edu>
 
 
 -------------For IAR----------------
+If we want presto inside our ipta docekr we need presto 2.2 (forpython 2)so...
+git clone git://github.com/scottransom/presto.git
+cd presto
+git checkout v2.2maint origin/v2.2maint
 
 Note, to use presto tools with our location and codes, we need to edit the following files from...
 
